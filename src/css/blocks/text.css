@@ -1,0 +1,15 @@
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--gray);
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1021px) {
+  .text {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,132 @@
+.notFound {
+  overflow: hidden;
+}
+
+.notFound__row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.notFound__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 165px;
+  margin-bottom: 165px;
+}
+
+.notFound__title {
+  width: 555px;
+  height: 262px;
+  margin-bottom: 10px;
+}
+
+.notFound__titleIcon {
+  width: 555px;
+  height: 262px;
+}
+
+.notFound__img {
+}
+
+.notFound__content {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notFound__contentTitle {
+  font-weight: 700;
+
+  color: var(--orange);
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.notFound__contentText {
+  color: var(--gray);
+  text-align: center;
+  padding: 0;
+  margin: 0 0 60px;
+}
+
+@media screen and (max-width: 1021px) {
+  .notFound__row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .notFound__wrapper {
+    margin-top: 60px;
+    margin-bottom: 110px;
+  }
+
+  .notFound__title,
+  .notFound__titleIcon {
+    width: 297px;
+    height: 140px;
+  }
+
+  .notFound__img {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  .notFound__content {
+    margin-top: -20px;
+  }
+
+  .notFound__contentTitle {
+    margin: 0 0 20px;
+  }
+
+  .notFound__contentText {
+    margin: 0 0 35px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .notFound__img {
+    width: 744px;
+    height: 128px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .notFound__wrapper {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+
+  .notFound__title,
+  .notFound__titleIcon {
+    width: 212px;
+    height: 100px;
+  }
+
+  .notFound__img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .notFound__content {
+    margin-top: -20px;
+  }
+
+  .notFound__contentTitle {
+    margin: 0 0 15px;
+  }
+
+  .notFound__contentText {
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notFound__img {
+    width: 500px;
+    height: 86px;
+  }
+}

@@ -1,0 +1,168 @@
+.preloader {
+  background-color: var(--blue);
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+
+  z-index: 100;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.preloader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader--nope {
+  display: none;
+}
+
+.preloader__row {
+  background-color: var(--blue);
+  padding: 0;
+  max-width: none;
+  border-left: none;
+  border-right: none;
+}
+
+.preloader__wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preloader__text {
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+  justify-self: flex-end;
+  align-self: flex-end;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+
+  margin-right: 114px;
+  margin-bottom: 60px;
+}
+
+.preloader__number {
+  font-weight: 400;
+  font-size: 285px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.preloader__numberDigit {
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  transform: translateY(0%);
+  opacity: 1;
+
+  transition: transform 300ms ease, opacity 300ms ease;
+
+  animation: 300ms digitSlide normal ease;
+}
+
+.preloader__numberDigit--done {
+  transform: translateY(-100%);
+  position: absolute;
+  opacity: 0;
+}
+
+@keyframes digitSlide {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.preloader__percent {
+  font-weight: 300;
+  font-size: 130px;
+  opacity: 0.9;
+}
+
+.preloader__progressLine {
+  height: 100vh;
+  width: 10px;
+
+  display: flex;
+}
+
+.preloader__progressLineCurrent {
+  width: 10px;
+  height: 0;
+  background-color: var(--orange);
+
+  align-self: flex-end;
+
+  transition: height 600ms ease;
+}
+
+@media screen and (max-width: 1021px) {
+  .preloader__text {
+    margin-right: 111px;
+    margin-bottom: 33px;
+  }
+
+  .preloader__number {
+    font-size: 138px;
+  }
+
+  .preloader__percent {
+    font-size: 63px;
+  }
+
+  .preloader__progressLine {
+    width: 5px;
+  }
+
+  .preloader__progressLineCurrent {
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .preloader__wrapper {
+    flex-direction: column;
+  }
+  .preloader__text {
+    font-size: 105px;
+    margin-right: 25px;
+    margin-bottom: 36px;
+  }
+
+  .preloader__number {
+    font-size: 105px;
+  }
+
+  .preloader__percent {
+    font-size: 60px;
+  }
+
+  .preloader__progressLine {
+    width: 100vw;
+    height: 10px;
+  }
+
+  .preloader__progressLineCurrent {
+    width: 0;
+    height: 10px;
+  }
+}

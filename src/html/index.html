@@ -1,0 +1,1114 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <header class="container header">
+      <div
+        class="container__row container__row--white container__row--wide container__row--noPR header__row"
+      >
+        <div class="header__logo">
+          <a href="/index.html">
+            <svg class="header__logoIcon">
+              <use href="./spritemap.svg#icon-logo-header" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="header__menu js-header-menu">
+          <nav class="header__menuNav">
+            <ul class="header__menuList">
+              <li class="header__menuLinkItem">
+                <a href="/functional.html" class="header__menuLink"
+                  >Функционал</a
+                >
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/cases.html" class="header__menuLink">Кейсы</a>
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/geography.html" class="header__menuLink"
+                  >География деятельности</a
+                >
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/appEco.html" class="header__menuLink"
+                  >Приложение ЭКО</a
+                >
+              </li>
+              <li class="header__menuLinkItem">
+                <a href="/news.html" class="header__menuLink">Новости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__right">
+          <a href="tel:84952224175" class="header__phone">
+            <svg class="header__phoneIcon">
+              <use href="./spritemap.svg#icon-phone" />
+            </svg>
+          </a>
+
+          <div class="header__burger js-burger">
+            <div class="header__burgerLine"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container mainMenu js-main-menu">
+      <div class="container__row mainMenu__container">
+        <div class="mainMenu__wrapper">
+          <div class="mainMenu__top">
+            <div class="mainMenu__logo">
+              <a href="/index.html">
+                <svg class="mainMenu__logoIcon">
+                  <use href="./spritemap.svg#icon-logo-footer" />
+                </svg>
+              </a>
+              <a href="tel:84952224175" class="mainMenu__phoneLink">
+                <svg class="mainMenu__phoneLinkIcon">
+                  <use href="./spritemap.svg#icon-mainMenu-phone" />
+                </svg>
+              </a>
+            </div>
+            <div class="mainMenu__closeButton js-main-menu-close">
+              <svg class="mainMenu__closeButtonIcon">
+                <use href="./spritemap.svg#icon-close" />
+              </svg>
+            </div>
+          </div>
+          <div class="mainMenu__bottom">
+            <div class="mainMenu__links">
+              <a href="/functional.html" class="mainMenu__link">Функционал</a>
+              <a href="/geography.html" class="mainMenu__link"
+                >География деятельности</a
+              >
+              <a href="/cases.html" class="mainMenu__link">Кейсы</a>
+              <a href="/appEco.html" class="mainMenu__link">Приложение ЭКО</a>
+              <a href="/news.html" class="mainMenu__link">Новости</a>
+              <a href="/faq.html" class="mainMenu__link">FAQ</a>
+            </div>
+            <div class="mainMenu__contacts">
+              <div class="mainMenu__contactsItem">
+                <span class="mainMenu__contactsItemTitle">Телефон</span>
+                <a href="tel:84952224175" class="mainMenu__contactsItemLink"
+                  >+7 (495) 222-41-75</a
+                >
+              </div>
+              <div class="mainMenu__contactsItem">
+                <span class="mainMenu__contactsItemTitle">Почта</span>
+                <a
+                  href="mailto:info@ecoplatforma.com"
+                  class="mainMenu__contactsItemLink"
+                  >info@ecoplatforma.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mainBanner mainBanner--initial" id="banner">
+      <div class="container__row mainBanner__row container__row--noPR js-canvas-row">
+        <div class="mainBanner__wrapper">
+          <div class="mainBanner__left">
+            <div class="mainBanner__leftHalf">
+              <div class="mainBanner__numbers js-main-banner-numbers">
+                <span
+                  class="mainBanner__numbersCurrent js-banner-slider-current"
+                ></span>
+                <span
+                  class="mainBanner__numbersTotal js-banner-slider-total"
+                ></span>
+              </div>
+              <div class="mainBanner__about">
+                <svg class="mainBanner__aboutIcon">
+                  <use href="./spritemap.svg#icon-mainBanner-about" />
+                </svg>
+                <p class="mainBanner__aboutText">
+                  Единая сквозная цифровая система для проектирования и анализа
+                  в реальном времени и&nbsp;полноценной автоматизации управления
+                  технологическими процессами
+                </p>
+              </div>
+            </div>
+            <div class="mainBanner__img js-canvas-wrapper">
+              <canvas class="js-canvas"></canvas>
+            </div>
+          </div>
+
+          <div class="mainBanner__right">
+            <div class="mainBanner__rightTop">
+              <h1 class="mainBanner__title title">Цифровая платформа ЭКО</h1>
+              <div class="mainBanner__buttons">
+                <div class="mainBanner__button animatedButton">
+                  <a href="/functional.html" class="animatedButton__content button"
+                    >функционал</a
+                  >
+                  <a href="/functional.html" class="animatedButton__contentHovered button"
+                    >функционал</a
+                  >
+                </div>
+                <div class="mainBanner__button animatedButton">
+                  <a href="/cases.html" class="animatedButton__content button">кейсы</a>
+                  <a href="/cases.html" class="animatedButton__contentHovered button"
+                    >кейсы</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mainBanner__rightBottom">
+              <div class="mainBanner__slider">
+                <div class="mainBanner__sliderScrollBar scrollBar">
+                  <div
+                    class="scrollBar__counter js-banner-slider-counter"
+                  ></div>
+                  <div
+                    class="scrollBar__progressBar js-banner-slider-progressbar"
+                  >
+                    <div class="scrollBar__progressBarCondition"></div>
+                  </div>
+                  <div class="scrollBar__arrows arrows">
+                    <div
+                      class="arrows__item arrowAnimated js-banner-slider-prev"
+                    >
+                      <svg class="arrowAnimated__icon">
+                        <use href="./spritemap.svg#icon-arrow" />
+                      </svg>
+                    </div>
+                    <div
+                      class="arrows__item arrowAnimated js-banner-slider-next"
+                    >
+                      <svg
+                        class="arrowAnimated__icon arrowAnimated__icon--right"
+                      >
+                        <use href="./spritemap.svg#icon-arrow" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="mainBanner__sliderItems js-banner-slider">
+                  <div class="swiper-wrapper">
+                    <div class="mainBanner__sliderItem swiper-slide">
+                      Все стадии строительства скважины от&nbsp;проектирования
+                      до&nbsp;заканчивания в&nbsp;единой аналитической среде,
+                      работающей в&nbsp;режиме реального времени
+                    </div>
+                    <div class="mainBanner__sliderItem swiper-slide">
+                      Позволяет всем участникам процесса принимать согласованные
+                      точные, быстрые и&nbsp;безаварийные решения
+                    </div>
+                    <div class="mainBanner__sliderItem swiper-slide">
+                      Обеспечения качества данных и&nbsp;их&nbsp;синхронизация
+                      в&nbsp;режиме реального времени
+                    </div>
+                    <div class="mainBanner__sliderItem swiper-slide">
+                      Контроль и&nbsp;обеспечение качества данных и&nbsp;их
+                      синхронизация в&nbsp;режиме реального времени
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mainAbout">
+      <div class="container__row">
+        <div class="mainAbout__description">
+          <div class="mainAbout__left">
+            <h5 class="mainAbout__title" data-class="title--shown">
+              О&nbsp;платформе
+            </h5>
+          </div>
+          <div class="mainAbout__right">
+            <h3
+              class="mainAbout__heading js-text-lines"
+              data-class="lines--shown"
+            >
+              <span class="mainAbout__headingAccent">ЭКО</span> производит
+              полноценный анализ ситуации в&nbsp;реальном времени, сравнение
+              с&nbsp;заданными параметрами и&nbsp;самокалибруется
+              в&nbsp;соответствии с&nbsp;реальными условиями
+            </h3>
+            <p class="mainAbout__subheading">
+              Позволяет всем участникам процесса принимать согласованные точные,
+              быстрые и&nbsp;безаварийные решения
+            </p>
+            <a
+              href="https://demo.eco-platforma.ru/index"
+              class="mainBanner__button button button--bigOrange"
+              >ПРОТЕСТИРОВАТЬ
+              <span class="button__arrow button__arrow--white">
+                <svg class="button__arrowIcon">
+                  <use href="./spritemap.svg#icon-arrow-solid" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container__row">
+        <div class="mainAbout__cards js-about-cards">
+          <div class="mainAbout__card js-about-card">
+            <div class="mainAbout__cardInner">
+              <div class="mainAbout__cardTop">
+                <svg class="mainAbout__cardLogo">
+                  <use href="./spritemap.svg#icon-logo-text" />
+                </svg>
+                <span class="mainAbout__cardHeading">проектирование СКВАЖИН</span>
+              </div>
+              <div class="mainAbout__cardBottom">
+                <img
+                  src="/img/mainAbout-card-1.jpg"
+                  srcset="
+                    /img/mainAbout-card-1.jpg        1x,
+                    /img/mainAbout-card-1-retina.jpg 2x
+                  "
+                  alt="Item"
+                  class="mainAbout__cardImg"
+                />
+                <div class="mainAbout__cardOpen roundButton roundButton--scale js-about-open-card">
+                  <svg class="roundButton__plusIcon">
+                    <use href="./spritemap.svg#icon-plus" />
+                  </svg>
+                </div>
+              </div>
+              <div class="mainAbout__cardHidden js-about-card-hidden">
+                <p class="mainAbout__cardHiddenText">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequuntur ducimus eaque, ex excepturi illo minima mollitia
+                  quaerat quis quos suscipit temporibus, ullam vel voluptatum.
+                  Aliquid aut beatae facilis nesciunt velit?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mainAbout__card js-about-card">
+            <div class="mainAbout__cardInner">
+              <div class="mainAbout__cardTop">
+                <svg class="mainAbout__cardLogo">
+                  <use href="./spritemap.svg#icon-logo-text" />
+                </svg>
+                <span class="mainAbout__cardHeading"
+                  >строительство&nbsp;<br />СКВАЖИН</span
+                >
+              </div>
+              <div class="mainAbout__cardBottom">
+                <img
+                  src="/img/mainAbout-card-2.jpg"
+                  srcset="
+                    /img/mainAbout-card-2.jpg        1x,
+                    /img/mainAbout-card-2-retina.jpg 2x
+                  "
+                  alt="Item"
+                  class="mainAbout__cardImg"
+                />
+                <div
+                  class="mainAbout__cardOpen roundButton roundButton--scale js-about-open-card"
+                >
+                  <svg class="roundButton__plusIcon">
+                    <use href="./spritemap.svg#icon-plus" />
+                  </svg>
+                </div>
+              </div>
+              <div class="mainAbout__cardHidden js-about-card-hidden">
+                <p class="mainAbout__cardHiddenText">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequuntur ducimus eaque, ex excepturi illo minima mollitia
+                  quaerat quis quos suscipit temporibus, ullam vel voluptatum.
+                  Aliquid aut beatae facilis nesciunt velit?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mainAbout__card js-about-card">
+            <div class="mainAbout__cardInner">
+              <div class="mainAbout__cardTop">
+                <svg class="mainAbout__cardLogo">
+                  <use href="./spritemap.svg#icon-logo-text" />
+                </svg>
+                <span class="mainAbout__cardHeading"
+                  >Постанализ&nbsp;<br />и&nbsp;эффективность</span
+                >
+              </div>
+              <div class="mainAbout__cardBottom">
+                <img
+                  src="/img/mainAbout-card-3.jpg"
+                  srcset="
+                    /img/mainAbout-card-3.jpg        1x,
+                    /img/mainAbout-card-3-retina.jpg 2x
+                  "
+                  alt="Item"
+                  class="mainAbout__cardImg"
+                />
+                <div
+                  class="mainAbout__cardOpen roundButton roundButton--scale js-about-open-card"
+                >
+                  <svg class="roundButton__plusIcon">
+                    <use href="./spritemap.svg#icon-plus" />
+                  </svg>
+                </div>
+              </div>
+              <div class="mainAbout__cardHidden js-about-card-hidden">
+                <p class="mainAbout__cardHiddenText">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequuntur ducimus eaque, ex excepturi illo minima mollitia
+                  quaerat quis quos suscipit temporibus, ullam vel voluptatum.
+                  Aliquid aut beatae facilis nesciunt velit?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mainTasks">
+      <div class="container__row container__row--blue mainTasks__row">
+        <div class="mainTasks__wrapper">
+          <div class="mainTasks__left slides">
+            <h2
+              class="mainTasks__title title title--h2 js-title"
+              data-class="title--shown"
+            >
+              <span class="title__line"
+                ><span class="title__lineInner">Выполняемые</span></span
+              >
+              <span class="title__line"
+                ><span class="title__lineInner">задачи</span></span
+              >
+            </h2>
+            <p class="mainTasks__description text">
+              Обеспечения качества данных&nbsp;<br />и&nbsp;их&nbsp;синхронизация
+              в&nbsp;режиме&nbsp;<br />реального времени
+            </p>
+          </div>
+          <div class="mainTasks__right">
+            <div class="mainTasks__circle circleSlider">
+              <div class="circleSlider__iconsWrapper">
+                <div class="circleSlider__icons js-circle-icons-viewport">
+                  <div
+                    class="circleSlider__icon circleSlider__icon--active circleSlider__icon--flexibility js-main-tasks-round-icon"
+                  >
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-flexibility" />
+                    </svg>
+                    <svg>
+                      <use
+                        href="./spritemap.svg#icon-task-flexibility-active"
+                      />
+                    </svg>
+                    <svg class="circleSlider__iconRound">
+                      <use href="./spritemap.svg#icon-animated-circle" />
+                    </svg>
+                  </div>
+                  <div
+                    class="circleSlider__icon circleSlider__icon--management js-main-tasks-round-icon"
+                  >
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-management" />
+                    </svg>
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-management-active" />
+                    </svg>
+                    <svg class="circleSlider__iconRound">
+                      <use href="./spritemap.svg#icon-animated-circle" />
+                    </svg>
+                  </div>
+                  <div
+                    class="circleSlider__icon circleSlider__icon--efficiency js-main-tasks-round-icon"
+                  >
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-efficiency" />
+                    </svg>
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-efficiency-active" />
+                    </svg>
+                    <svg class="circleSlider__iconRound">
+                      <use href="./spritemap.svg#icon-animated-circle" />
+                    </svg>
+                  </div>
+                  <div
+                    class="circleSlider__icon circleSlider__icon--measurements js-main-tasks-round-icon"
+                  >
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-measurements" />
+                    </svg>
+                    <svg>
+                      <use
+                        href="./spritemap.svg#icon-task-measurements-active"
+                      />
+                    </svg>
+                    <svg class="circleSlider__iconRound">
+                      <use href="./spritemap.svg#icon-animated-circle" />
+                    </svg>
+                  </div>
+                  <div
+                    class="circleSlider__icon circleSlider__icon--digital js-main-tasks-round-icon"
+                  >
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-digital" />
+                    </svg>
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-digital-active" />
+                    </svg>
+                    <svg class="circleSlider__iconRound">
+                      <use href="./spritemap.svg#icon-animated-circle" />
+                    </svg>
+                  </div>
+                  <div
+                    class="circleSlider__icon circleSlider__icon--space js-main-tasks-round-icon"
+                  >
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-space" />
+                    </svg>
+                    <svg>
+                      <use href="./spritemap.svg#icon-task-space-active" />
+                    </svg>
+                    <svg class="circleSlider__iconRound">
+                      <use href="./spritemap.svg#icon-animated-circle" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="circleSlider__centralIcons">
+                <div
+                  class="circleSlider__centralIcon circleSlider__centralIcon--active js-main-tasks-central-icon"
+                >
+                  <svg>
+                    <use href="./spritemap.svg#icon-task-flexibility-central" />
+                  </svg>
+                </div>
+                <div
+                  class="circleSlider__centralIcon js-main-tasks-central-icon"
+                >
+                  <svg>
+                    <use href="./spritemap.svg#icon-task-management-central" />
+                  </svg>
+                </div>
+                <div
+                  class="circleSlider__centralIcon js-main-tasks-central-icon"
+                >
+                  <svg>
+                    <use href="./spritemap.svg#icon-task-efficiency-central" />
+                  </svg>
+                </div>
+                <div
+                  class="circleSlider__centralIcon js-main-tasks-central-icon"
+                >
+                  <svg>
+                    <use
+                      href="./spritemap.svg#icon-task-measurements-central"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="circleSlider__centralIcon js-main-tasks-central-icon"
+                >
+                  <svg>
+                    <use href="./spritemap.svg#icon-task-digital-central" />
+                  </svg>
+                </div>
+                <div
+                  class="circleSlider__centralIcon js-main-tasks-central-icon"
+                >
+                  <svg>
+                    <use href="./spritemap.svg#icon-task-space-central" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="circleSlider__items">
+                <div
+                  class="circleSlider__item circleSlider__item--active js-main-tasks-item"
+                >
+                  <h3 class="circleSlider__itemTitle title title--h3">
+                    Гибкость архитектуры
+                  </h3>
+                  <p class="circleSlider__itemText text">
+                    Интеграция с&nbsp;существующими системами пользователей
+                    платформы и&nbsp;адаптация регламентов и&nbsp;процессов
+                  </p>
+                </div>
+                <div class="circleSlider__item js-main-tasks-item">
+                  <h3 class="circleSlider__itemTitle title title--h3">
+                    Управление<br />&nbsp;процессами
+                  </h3>
+                  <p class="circleSlider__itemText text">
+                    Автоматизация принятия операционных решений, управление
+                    оборудованием и&nbsp;автоматизированная отчетность
+                  </p>
+                </div>
+                <div class="circleSlider__item js-main-tasks-item">
+                  <h3 class="circleSlider__itemTitle title title--h3">
+                    Оценка<br />&nbsp;эффективности
+                  </h3>
+                  <p class="circleSlider__itemText text">
+                    Ключевые показатели эффективности по&nbsp;процессам
+                    и&nbsp;статистика качества исполнения регламентных процедур
+                  </p>
+                </div>
+                <div class="circleSlider__item js-main-tasks-item">
+                  <h3 class="circleSlider__itemTitle title title--h3">
+                    Объективность<br />&nbsp;измерений
+                  </h3>
+                  <p class="circleSlider__itemText text">
+                    Контроль и&nbsp;обеспечение<br />&nbsp;качества данных
+                    и&nbsp;их синхронизация в&nbsp;режиме реального времени
+                  </p>
+                </div>
+                <div class="circleSlider__item js-main-tasks-item">
+                  <h3 class="circleSlider__itemTitle title title--h3">
+                    Цифровой<br />&nbsp;двойник
+                  </h3>
+                  <p class="circleSlider__itemText text">
+                    Многодисциплинарная калиброванная модель
+                    для&nbsp;осуществимости безаварийных операций
+                  </p>
+                </div>
+                <div class="circleSlider__item js-main-tasks-item">
+                  <h3 class="circleSlider__itemTitle title title--h3">
+                    Единое<br />&nbsp;пространство
+                  </h3>
+                  <p class="circleSlider__itemText text">
+                    Вся информация и&nbsp;анализы производятся ценрализовано
+                    без&nbsp;необходимости установки програмного обеспечения
+                  </p>
+                </div>
+
+                <div class="circleSlider__arrows arrows">
+                  <div class="arrows__item arrowAnimated js-main-tasks-prev">
+                    <svg class="arrowAnimated__icon">
+                      <use href="./spritemap.svg#icon-arrow" />
+                    </svg>
+                  </div>
+                  <div class="arrows__item arrowAnimated js-main-tasks-next">
+                    <svg class="arrowAnimated__icon arrowAnimated__icon--right">
+                      <use href="./spritemap.svg#icon-arrow" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mainAdvantages">
+      <div class="container__row">
+        <div class="mainAdvantages__wrapper">
+          <h2
+            class="mainAdvantages__title title title--h2 js-title"
+            data-class="title--shown"
+          >
+            <span class="title__line"
+              ><span class="title__lineInner">Преимущества</span></span
+            >
+            <span class="title__line"
+              ><span class="title__lineInner">экосистемы</span></span
+            >
+          </h2>
+          <div class="mainAdvantages__items">
+            <div class="mainAdvantages__item">
+              <div class="mainAdvantages__itemHeading">
+                <span class="mainAdvantages__itemHeadingNum">/01</span>
+                <h3
+                  class="mainAdvantages__itemHeadingText title title--h3"
+                  data-class="title--shown"
+                >
+                  Экономичность
+                </h3>
+              </div>
+              <div class="mainAdvantages__itemPoints">
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Используется существующее оборудование,&nbsp;датчики &nbsp;<br />и&nbsp;инфраструктура
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Существенное снижение риска&nbsp;<br />осложнений и
+                  аварийности
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Качественное улучшение показателей скорости, эффективности,
+                  качества результата и&nbsp;компетентности персонала
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Сокращение времени принятия и&nbsp;повышение обоснованности
+                  решений
+                </p>
+              </div>
+            </div>
+
+            <div class="mainAdvantages__item">
+              <div class="mainAdvantages__itemHeading">
+                <span class="mainAdvantages__itemHeadingNum">/02</span>
+                <h3
+                  class="mainAdvantages__itemHeadingText title title--h3"
+                  data-class="title--shown"
+                >
+                Гибкость&nbsp;<br />и&nbsp;масштабирование
+                </h3>
+              </div>
+              <div class="mainAdvantages__itemPoints">
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Облачные технологии и&nbsp;неограниченное количество
+                  пользователей
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Легкая настройка функционала в&nbsp;зависимости
+                  от&nbsp;решаемых&nbsp;<br />пользователем задач
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Защищенные системы и&nbsp;надежные каналы связи
+                </p>
+              </div>
+            </div>
+
+            <div class="mainAdvantages__item">
+              <div class="mainAdvantages__itemHeading">
+                <span class="mainAdvantages__itemHeadingNum">/03</span>
+                <h3
+                  class="mainAdvantages__itemHeadingText title title--h3"
+                  data-class="title--shown"
+                >
+                  Цифровой двойник
+                </h3>
+              </div>
+              <div class="mainAdvantages__itemPoints">
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Высокочастотные вычисления&nbsp;<br />модели бурения
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Предиктивная и&nbsp;предписывающая аналитика
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Автоматизация и&nbsp;роботизация оборудования
+                </p>
+                <p
+                  class="mainAdvantages__itemPoint text js-text-lines"
+                  data-class="lines--shown"
+                >
+                  Автоматизированная отчетность и&nbsp;хранение данных
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mainIntellectual">
+      <div class="container__row container__row--blue">
+        <div class="mainIntellectual__wrapper">
+          <div class="mainIntellectual__top">
+            <h2
+              class="mainIntellectual__title title title--h2 js-title"
+              data-class="title--shown"
+            >
+              <span class="title__line"
+                ><span class="title__lineInner">Интеллектуальная</span></span
+              >
+              <span class="title__line"
+                ><span class="title__lineInner"
+                  >составляющая процесса</span
+                ></span
+              >
+            </h2>
+
+            <p
+              class="mainIntellectual__description js-text-lines"
+              data-class="lines--shown"
+            >
+              ЭКО платформа объединяет и&nbsp;интегрирует потоки данных и
+              инженерную экспертизу, достигая значительного увеличения уровня
+              автоматизации и&nbsp;эффективности работы
+            </p>
+          </div>
+          <div class="mainIntellectual__central">
+            <div class="mainIntellectual__centralItems js-intellectual-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="mainIntellectual__centralItem">
+                    <h4 class="mainIntellectual__centralItemTitle">
+                      Технологический&nbsp;<br />контроль
+                    </h4>
+                    <p class="mainIntellectual__centralItemText">
+                      Автоматизированный механизм отчетности и&nbsp;принятия
+                      решений. Расчеты и&nbsp;визуализация KPI в&nbsp;реальном
+                      времени
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainIntellectual__centralItem">
+                    <h4 class="mainIntellectual__centralItemTitle">
+                      Мультифизическое&nbsp;<br />моделирование
+                    </h4>
+                    <p class="mainIntellectual__centralItemText">
+                      Достоверное моделирование с&nbsp;помощью технологии
+                      цифрового двойника постоянно адаптирующуся
+                      к&nbsp;меняющимся внутрискважинными условиям
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="mainIntellectual__centralItem">
+                    <h4 class="mainIntellectual__centralItemTitle">
+                      Агрегация &nbsp;<br />данных
+                    </h4>
+                    <p class="mainIntellectual__centralItemText">
+                      Понимание внитрискважинных условий за&nbsp;счет
+                      мониторинга показаний измерительных приборов. Объединение
+                      всех данных инфраструктуры клиента
+                    </p>
+                  </div>
+                </div>
+                <div class="mainIntellectual__arrows arrows">
+                  <div class="arrows__item js-intellectual-slider-prev">
+                    <svg class="arrows__itemIcon arrows__itemIcon--left">
+                      <use href="./spritemap.svg#icon-arrow" />
+                    </svg>
+                  </div>
+                  <div class="arrows__item js-intellectual-slider-next">
+                    <svg class="arrows__itemIcon arrows__itemIcon--right">
+                      <use href="./spritemap.svg#icon-arrow" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mainIntellectual__bottom">
+            <div class="mainIntellectual__outline">
+              <div class="mainIntellectual__dashedLine"></div>
+              <div class="mainIntellectual__circleOrange">
+                <div class="mainIntellectual__circleInner">
+                  <h3 class="mainIntellectual__circleTitle title title--h3">
+                    Единое цифровое пространство
+                  </h3>
+                  <p class="mainIntellectual__circleText">
+                    Облачное хранилище данных неограниченного количества
+                    буровых.&nbsp;<br />Гибкая схема установки
+                    и&nbsp;внедрения
+                  </p>
+                </div>
+              </div>
+              <div class="mainIntellectual__icons">
+                <div
+                  class="mainIntellectual__icon mainIntellectual__icon--data js-swiper-data"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <svg class="mainIntellectual__iconItem">
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-data"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg
+                        class="mainIntellectual__iconItem mainIntellectual__iconItem--tab"
+                      >
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-control"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg
+                        class="mainIntellectual__iconItem mainIntellectual__iconItem--tab"
+                      >
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-multi"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="mainIntellectual__iconContent mainIntellectual__iconContent--data"
+                  >
+                    <h4 class="mainIntellectual__iconTitle">
+                      Агрегация данных
+                    </h4>
+                    <p class="mainIntellectual__iconText">
+                      Понимание внитрискважинных условий за&nbsp;счет
+                      мониторинга показаний измерительных приборов. Объединение
+                      всех данных инфраструктуры клиента
+                    </p>
+                  </div>
+                  <div class="mainIntellectual__iconLine">
+                    <svg
+                      class="mainIntellectual__iconLineIcon mainIntellectual__iconLineIcon--data"
+                    >
+                      <use href="./spritemap.svg#icon-dashed-line" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="mainIntellectual__icon mainIntellectual__icon--control js-swiper-control"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <svg class="mainIntellectual__iconItem">
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-control"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg
+                        class="mainIntellectual__iconItem mainIntellectual__iconItem--tab"
+                      >
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-multi"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg
+                        class="mainIntellectual__iconItem mainIntellectual__iconItem--tab"
+                      >
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-data"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="mainIntellectual__iconContent mainIntellectual__iconContent--control"
+                  >
+                    <h4 class="mainIntellectual__iconTitle">
+                      Технологический&nbsp;<br />контроль
+                    </h4>
+                    <p class="mainIntellectual__iconText">
+                      Автоматизированный механизм отчетности и&nbsp;принятия
+                      решений. Расчеты и&nbsp;визуализация KPI в&nbsp;реальном
+                      времени
+                    </p>
+                  </div>
+                  <div class="mainIntellectual__iconLine">
+                    <svg
+                      class="mainIntellectual__iconLineIcon mainIntellectual__iconLineIcon--control"
+                    >
+                      <use href="./spritemap.svg#icon-dashed-line" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div
+                  class="mainIntellectual__icon mainIntellectual__icon--multi js-swiper-multi"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <svg class="mainIntellectual__iconItem">
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-multi"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg
+                        class="mainIntellectual__iconItem mainIntellectual__iconItem--tab"
+                      >
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-data"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-slide">
+                      <svg
+                        class="mainIntellectual__iconItem mainIntellectual__iconItem--tab"
+                      >
+                        <use
+                          href="./spritemap.svg#icon-mainIntellectual-control"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="mainIntellectual__iconContent mainIntellectual__iconContent--multi"
+                  >
+                    <h4 class="mainIntellectual__iconTitle">
+                      Мультифизическое моделирование
+                    </h4>
+                    <p class="mainIntellectual__iconText">
+                      Достоверное моделирование с&nbsp;помощью технологии
+                      цифрового двойника постоянно адаптирующуся
+                      к&nbsp;меняющимся внутрискважинными условиям
+                    </p>
+                  </div>
+                  <div class="mainIntellectual__iconLine">
+                    <svg
+                      class="mainIntellectual__iconLineIcon mainIntellectual__iconLineIcon--multi"
+                    >
+                      <use href="./spritemap.svg#icon-dashed-line" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mainHowItWorks">
+      <div class="container__row">
+        <div class="mainHowItWorks__wrapper">
+          <h2
+            class="mainHowItWorks__title title title--h2 js-title"
+            data-class="title--shown"
+          >
+            <span class="title__line"><span class="title__lineInner">Как это работает?</span></span>
+          </h2>
+
+          <div class="mainHowItWorks__imgWrapper js-how-it-works">
+            <figure class="mainHowItWorks__img">
+              <img
+                class=""
+                src="/img/howItWork.png"
+                srcset="/img/howItWork.png 1x, /img/howItWork-retina.png 2x"
+                alt="example"
+              />
+              <figcaption class="mainHowItWorks__imgCaption">
+                <span>✱</span> Одна из&nbsp;возможных схем подключения.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer">
+      <div class="container__row container__row--wide footer__row">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__logoWrapper">
+              <a href="index.html" class="footer__logo">
+                <svg class="footer__logoIcon">
+                  <use href="./spritemap.svg#icon-logo-footer" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="footer__links">
+              <a href="/index.html" class="footer__link footer__link--main"
+              >Главная</a
+              >
+              <a href="/appEco.html" class="footer__link footer__link--mob"
+              >Мобильное приложение ЭКО</a
+              >
+              <a href="/cases.html" class="footer__link footer__link--case"
+              >Кейсы</a
+              >
+              <a href="/faq.html" class="footer__link footer__link--faq">FAQ</a>
+              <a href="/functional.html" class="footer__link footer__link--func"
+              >Функционал ЭКО</a
+              >
+              <a href="/news.html" class="footer__link footer__link--press"
+              >ЭКО в&nbsp;прессе</a
+              >
+              <a href="/geography.html" class="footer__link footer__link--geo"
+              >География деятельности</a
+              >
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contactsItem">
+                <span class="footer__contactsItemHeading">Телефон</span>
+                <a href="tel:84952224175" class="footer__contactsPhone">+7 (495) 222-41-75</a>
+              </div>
+              <div class="footer__contactsItem">
+                <span class="footer__contactsItemHeading">Почта</span>
+                <a
+                        href="mailto:info@ecoplatforma.com"
+                        class="footer__contactsMail">info@ecoplatforma.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              <span>&copy;&nbsp;2022&nbsp;ЭКО цифровая платформа</span>
+            </div>
+            <div class="footer__socials">
+              <a href="" class="footer__socialsLink">App Store</a>
+              <a href="" class="footer__socialsLink">Google play</a>
+            </div>
+            <div class="footer__madeBy">
+              <a href="https://finik.org/" class="footer__madeByText"
+                >Сайт сделан в&nbsp;<span>FINIK</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="container preloader js-preloader">
+      <div class="container__row preloader__row">
+        <div class="preloader__wrapper">
+          <div class="preloader__progressLine">
+            <div class="preloader__progressLineCurrent js-preloader-progress-line"></div>
+          </div>
+          <div class="preloader__text">
+            <div class="preloader__number">
+              <span class="preloader__numberDigit js-current-percent">0</span>
+            </div>
+            <div class="preloader__percent">%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modals js-modals"></section>
+
+    <section class="cookie js-cookie">
+      <p class="cookie__text">
+        Этот сайт использует <a href="#" class="cookie__link">cookies.</a>
+      </p>
+      <button class="cookie__button js-cookie-accept">ОК</button>
+    </section>
+  </body>
+</html>

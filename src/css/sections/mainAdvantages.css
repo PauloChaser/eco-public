@@ -1,0 +1,253 @@
+.mainAdvantages {
+}
+
+.mainAdvantages__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 190px;
+  padding-top: 190px;
+  align-items: flex-start;
+}
+
+.mainAdvantages__title {
+  flex-basis: 35%;
+}
+
+.mainAdvantages__items {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+}
+
+.mainAdvantages__item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mainAdvantages__item:last-child {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.mainAdvantages__itemHeading {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mainAdvantages__itemHeadingNum {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--orange);
+}
+
+.mainAdvantages__itemHeadingText {
+  margin: 0;
+  padding: 0;
+  margin-left: 115px;
+  line-height: 1 !important;
+}
+
+.mainAdvantages__itemPoints {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 42%;
+}
+
+.mainAdvantages__itemPoint {
+  margin: 0;
+  padding: 0;
+  padding-left: 27px;
+  position: relative;
+  max-width: 419px;
+}
+
+.mainAdvantages__itemPoint:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mainAdvantages__itemPoint:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  background-color: var(--orange);
+}
+
+@media screen and (max-width: 1650px) {
+  .mainAdvantages__itemHeadingText {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .mainAdvantages__title {
+    flex-basis: 30%;
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .mainAdvantages__items {
+    flex-basis: 68%;
+  }
+
+  .mainAdvantages__itemHeadingText {
+    margin-left: 50px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .mainAdvantages__wrapper {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .mainAdvantages__title {
+    margin-top: 37px;
+  }
+
+  .mainAdvantages__items {
+    flex-basis: 66%;
+  }
+
+  .mainAdvantages__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .mainAdvantages__itemHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mainAdvantages__itemHeadingText {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .mainAdvantages__itemPoints {
+    max-width: 51%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainAdvantages__item {
+    width: 100%;
+  }
+
+  .mainAdvantages__itemPoints {
+    width: 100%;
+    max-width: 55%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mainAdvantages__wrapper {
+    flex-direction: column;
+  }
+
+  .mainAdvantages__title {
+    margin-bottom: 30px;
+  }
+
+  .mainAdvantages__items {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .mainAdvantages__wrapper {
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .mainAdvantages__title {
+    flex-basis: auto;
+    margin-bottom: 70px;
+    font-size: 25px;
+    margin-top: 0;
+  }
+
+  .mainAdvantages__items {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+  }
+
+  .mainAdvantages__itemHeading {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  .mainAdvantages__itemHeadingNum {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .mainAdvantages__itemHeadingText {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .mainAdvantages__itemPoints {
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 48%;
+    padding-right: 5px;
+  }
+
+  .mainAdvantages__itemPoint {
+    padding-left: 22px;
+  }
+
+  .mainAdvantages__itemPoint:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainAdvantages__wrapper {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .mainAdvantages__title {
+    flex-basis: auto;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  .mainAdvantages__item {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    flex-direction: column;
+  }
+
+  .mainAdvantages__itemHeading {
+    margin-bottom: 25px;
+  }
+
+  .mainAdvantages__itemHeadingText {
+    font-size: 16px;
+  }
+
+  .mainAdvantages__itemPoints {
+    max-width: 100%;
+    padding-right: 5px;
+  }
+}

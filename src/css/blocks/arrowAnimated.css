@@ -1,0 +1,117 @@
+.arrowAnimated {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  background: none;
+
+  box-sizing: border-box;
+
+  border-radius: 100%;
+  position: relative;
+  vertical-align: middle;
+}
+
+.arrowAnimated::before,
+.arrowAnimated::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.arrowAnimated:hover {
+  color: #ed6c2d;
+}
+
+.arrowAnimated::before,
+.arrowAnimated::after {
+  top: -1px;
+  left: -1px;
+  transform: rotate(45deg);
+}
+
+.arrowAnimated::before {
+  border: 1px solid transparent;
+  transition: border-top-color 0.1s linear 0.15s,
+    border-right-color 0.1s linear 0.1s, border-bottom-color 0.1s linear 0.05s;
+}
+
+.arrowAnimated:hover::before {
+  border-top-color: #ed6c2d;
+  border-right-color: #ed6c2d;
+  border-bottom-color: #ed6c2d;
+
+  transition: border-top-color 0.1s linear, border-right-color 0.1s linear 0.05s,
+    border-bottom-color 0.1s linear 0.15s;
+}
+
+.arrowAnimated::after {
+  border: 0 solid transparent;
+  transition: transform 0.2s linear 0s, border-top 0.2s linear;
+}
+
+.arrowAnimated:hover::after {
+  border-top: 1px solid #ed6c2d;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  transform: rotate(315deg);
+  transition: transform 0.3s linear 0s, border-left-width 0s linear 0.25s;
+  z-index: 1;
+}
+
+.arrowAnimated__icon {
+  margin-left: 0;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+
+  transition: fill 400ms ease;
+  z-index: 1;
+}
+
+.arrowAnimated__icon--right {
+  transform: scale(-1);
+}
+
+.arrowAnimated:hover .arrowAnimated__icon {
+  fill: var(--orange);
+}
+
+@media screen and (max-width: 1021px) {
+  .arrowAnimated {
+    width: 36px;
+    height: 36px;
+  }
+
+  .arrowAnimated::before,
+  .arrowAnimated::after {
+    width: 36px;
+    height: 36px;
+  }
+
+  .arrowAnimated__icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .arrowAnimated {
+    width: 35px;
+    height: 35px;
+  }
+
+  .arrowAnimated::before,
+  .arrowAnimated::after {
+    width: 35px;
+    height: 35px;
+  }
+}

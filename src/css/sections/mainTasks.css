@@ -1,0 +1,130 @@
+.mainTasks {
+  overflow: hidden;
+}
+
+.mainTasks__row {
+  overflow: hidden;
+}
+
+.mainTasks__wrapper {
+  padding-top: 100px;
+  padding-bottom: 67px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.mainTasks__left {
+  width: calc(50% - 313px);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  z-index: 2;
+}
+
+.mainTasks__title {
+  color: #ffffff;
+}
+
+.mainTasks__description {
+  color: #ffffff;
+  margin-top: auto;
+  z-index: 2;
+}
+
+.mainTasks__right {
+  margin-bottom: 70px;
+}
+
+.mainTasks__circle {
+  position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainTasks__wrapper {
+    padding-top: 113px;
+    padding-bottom: 55px;
+    /*display: flex;*/
+    /*align-items: stretch;*/
+    /*justify-content: flex-start;*/
+    /*width: 100%;*/
+  }
+
+  .mainTasks__title {
+    margin-top: -38px;
+  }
+
+  .mainTasks__left {
+    width: calc(50% - 225px);
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .mainTasks__description br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+}
+
+@media screen and (max-width: 1300px) {
+  .mainTasks__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainTasks__description {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .mainTasks__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 99px;
+  }
+
+  .mainTasks__left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .mainTasks__title {
+    margin-top: 0;
+    font-size: 25px;
+    max-width: 30%;
+  }
+
+  .mainTasks__right {
+    margin-left: -40px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainTasks {
+  }
+
+  .mainTasks__row {
+    padding-right: 0;
+  }
+
+  .mainTasks__wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .mainTasks__right {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

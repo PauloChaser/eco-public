@@ -1,0 +1,32 @@
+.news {
+}
+
+.news__wrapper {
+  width: 100%;
+  margin-bottom: 140px;
+}
+
+.news__title {
+  color: var(--gray);
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1021px) {
+  .news__wrapper {
+    margin-bottom: 110px;
+  }
+
+  .news__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news__wrapper {
+    margin-bottom: 100px;
+  }
+
+  .news__title {
+    margin-bottom: 40px;
+  }
+}

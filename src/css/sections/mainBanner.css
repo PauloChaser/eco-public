@@ -1,0 +1,468 @@
+.mainBanner {
+  width: 100%;
+}
+
+.mainBanner--initial {
+}
+
+.mainBanner__row {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-bottom: 1px solid var(--white-dark);
+}
+
+.mainBanner__row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+
+  transition: transform 400ms ease;
+}
+
+.mainBanner--initial .mainBanner__row::after {
+  transform: translateX(-100%);
+}
+
+.mainBanner__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.mainBanner__left {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding-top: 106px;
+  padding-bottom: 63px;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 400ms ease 1200ms, transform 400ms ease 1200ms;
+}
+
+.mainBanner--initial .mainBanner__leftHalf {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.mainBanner--initial .mainBanner__img {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.mainBanner__leftHalf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 431px;
+
+  opacity: 1;
+  transition: opacity 400ms ease 1200ms, transform 400ms ease 1200ms;
+}
+
+.mainBanner__numbers {
+  display: flex;
+  flex-direction: column;
+  max-width: 121px;
+  margin-top: 43px;
+
+  opacity: 0;
+}
+
+.mainBanner__numbers--active {
+  transition: opacity 300ms ease;
+
+  opacity: 1;
+}
+
+.mainBanner__numbersCurrent {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--blue);
+}
+
+.mainBanner__numbersTotal {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--grey);
+  margin-left: auto;
+  position: relative;
+}
+
+.mainBanner__numbersTotal::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 7px;
+  width: 13px;
+  height: 2px;
+  background-color: var(--grey);
+}
+
+.mainBanner__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  transition: opacity 400ms ease 1200ms, transform 400ms ease 1200ms;
+}
+
+.mainBanner__about {
+}
+
+.mainBanner__aboutIcon {
+  width: 62px;
+  height: 66px;
+}
+
+.mainBanner__aboutText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--gray);
+  padding: 0;
+  margin: 25px 0 0;
+}
+
+.mainBanner__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: -50px;
+
+  width: calc(50% + 125px);
+  flex-basis: calc(50% + 125px);
+  background-color: var(--blue);
+
+  padding: 187px 80px 97px 134px;
+  height: 910px;
+  z-index: 1;
+
+  transition: transform 600ms cubic-bezier(0.8, -0.5, 0.2, 1.4) 400ms;
+}
+
+.mainBanner--initial .mainBanner__right {
+  transform: translateX(100%);
+}
+
+.mainBanner__rightTop {
+  opacity: 1;
+  transition: opacity 400ms ease 1000ms, transform 400ms ease 1000ms;
+}
+
+.mainBanner--initial .mainBanner__rightTop {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.mainBanner__title {
+  margin-bottom: 45px;
+  width: 70%;
+}
+
+.mainBanner__buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainBanner__button:first-child {
+  margin-right: 20px;
+}
+
+.mainBanner__rightBottom {
+  margin-top: auto;
+  opacity: 1;
+  transition: opacity 400ms ease 1000ms, transform 400ms ease 1000ms;
+}
+
+.mainBanner--initial .mainBanner__rightBottom {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.mainBanner__slider {
+}
+
+.mainBanner__sliderScrollBar {
+  margin-bottom: 35px;
+  position: relative;
+  max-width: 614px;
+}
+
+.mainBanner__sliderScrollBar .scrollBar__arrows,
+.mainBanner__sliderScrollBar .scrollBar__counter {
+  right: 0;
+}
+
+.mainBanner__sliderItems {
+  display: flex;
+}
+
+.mainBanner__sliderItem {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  color: #ffffff;
+  max-width: 64%;
+}
+
+.mainBanner__sliderItem.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
+}
+
+@media screen and (max-width: 1600px) {
+  .mainBanner__sliderItem {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .mainBanner__right {
+    padding: 157px 100px 77px 80px;
+    height: 910px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .mainBanner__right {
+    width: calc(50% + 115px);
+    padding: 177px 110px 53px 100px;
+    height: 709px;
+  }
+
+  .mainBanner__title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .mainBanner__button:first-child {
+    margin-right: 40px;
+  }
+
+  .mainBanner__sliderScrollBar {
+    margin-top: 138px;
+  }
+
+  .mainBanner__sliderItem {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mainBanner__button:first-child {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1243px) {
+  .mainBanner__right {
+    padding: 127px 110px 53px 70px;
+    /*height: auto;*/
+  }
+
+  .mainBanner__sliderItem {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainBanner__left {
+    padding-bottom: 50px;
+    padding-right: 15px;
+  }
+
+  .mainBanner__right {
+    /*height: 850px;*/
+    padding: 127px 100px 77px 50px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .mainBanner__right {
+    padding-top: 110px;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .mainBanner .container__row {
+    padding-left: 0;
+  }
+
+  .mainBanner__wrapper {
+    flex-direction: column;
+  }
+
+  .mainBanner__left {
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 24px 200px;
+    position: relative;
+  }
+
+  .mainBanner__leftHalf {
+    max-width: 55%;
+  }
+
+  .mainBanner__numbers {
+    display: none;
+  }
+
+  .mainBanner__img {
+    transform: translateY(calc(50% - 95px));
+  }
+
+  .mainBanner__about {
+    display: flex;
+  }
+
+  .mainBanner__aboutIcon {
+    width: 28px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .mainBanner__aboutText {
+    font-size: 13px;
+    line-height: 1.45;
+
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .mainBanner__right {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    flex-basis: 100%;
+
+    padding: 45px 25px 55px 22px;
+    height: auto;
+  }
+
+  .mainBanner__rightTop {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .mainBanner__title {
+    margin-bottom: 39px;
+    width: 100%;
+  }
+
+  .mainBanner__button:first-child {
+    margin-right: 20px;
+  }
+
+  .mainBanner__rightBottom {
+    margin-top: -11px;
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+
+  .mainBanner--initial .mainBanner__row::after,
+  .mainBanner--initial .mainBanner__left,
+  .mainBanner--initial .mainBanner__right,
+  .mainBanner--initial .mainBanner__rightTop,
+  .mainBanner--initial .mainBanner__rightBottom {
+    transform: none;
+    opacity: 1;
+  }
+
+  .mainBanner__sliderScrollBar {
+    margin-top: auto;
+    padding-top: 42px;
+    margin-bottom: 22px;
+    position: relative;
+    max-width: none;
+  }
+
+  .mainBanner__sliderItems {
+    display: flex;
+  }
+
+  .mainBanner__sliderItem {
+    font-size: 12px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainBanner__wrapper {
+    border-bottom: none;
+  }
+
+  .mainBanner__left {
+    padding: 40px 20px 180px;
+  }
+
+  .mainBanner__leftHalf {
+    max-width: 80%;
+  }
+
+  .mainBanner__about {
+    flex-direction: column;
+  }
+
+  .mainBanner__aboutText {
+    margin: 0;
+    margin-top: 11px;
+  }
+
+  .mainBanner__right {
+    flex-direction: column;
+    flex-basis: auto;
+    max-width: 100%;
+    padding: 30px 39px 30px 20px;
+  }
+
+  .mainBanner__rightTop {
+    flex-basis: auto;
+    max-width: none;
+  }
+
+  .mainBanner__title {
+    margin-bottom: 25px;
+  }
+
+  .mainBanner__button:first-child {
+    margin-right: 12px;
+  }
+
+  .mainBanner__rightBottom {
+    margin-top: 0;
+    flex-basis: auto;
+    max-width: 100%;
+  }
+
+  .mainBanner__sliderScrollBar {
+    padding-top: 110px;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainBanner__leftHalf {
+    max-width: 98%;
+  }
+
+  .mainBanner__right {
+    padding-left: 20px;
+  }
+
+  .mainBanner__button .button {
+    width: 123px;
+    padding: 9px 21px;
+  }
+}

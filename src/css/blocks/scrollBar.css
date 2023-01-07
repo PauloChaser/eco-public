@@ -1,0 +1,77 @@
+.scrollBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.scrollBar__counter {
+  position: absolute;
+  right: 52px;
+  top: 34px;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+
+  flex-shrink: 0;
+}
+
+.scrollBar__progressBar {
+  width: 100%;
+  min-width: 100px;
+  max-width: 614px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  position: relative;
+}
+.scrollBar__progressBar.swiper-pagination-progressbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.scrollBar__progressBar.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  height: 2px;
+}
+
+.scrollBar__progressBarCondition {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 2px;
+  background-color: var(--orange);
+}
+
+.scrollBar__arrows {
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+  flex-shrink: 0;
+  width: 111px;
+  height: auto;
+}
+
+@media screen and (max-width: 1021px) {
+  .scrollBar__arrows {
+    top: auto;
+    bottom: 15px;
+    width: 82px;
+  }
+
+  .scrollBar__counter {
+    right: auto;
+    left: 0;
+    top: auto;
+    bottom: 24px;
+
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+}

@@ -1,0 +1,57 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+@import "vars.css";
+
+@import "blocks/container.css";
+@import "blocks/button.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/title.css";
+@import "blocks/text.css";
+@import "blocks/arrows.css";
+@import "blocks/overlay.css";
+@import "blocks/scrollBar.css";
+@import "blocks/circleSlider.css";
+@import "blocks/roundButton.css";
+@import "blocks/cards.css";
+@import "blocks/animatedButton.css";
+@import "blocks/cookie.css";
+@import "blocks/arrowAnimated.css";
+@import "blocks/lines.css";
+
+@import "sections/header.css";
+@import "sections/mainMenu.css";
+@import "sections/mainBanner.css";
+@import "sections/mainAbout.css";
+@import "sections/mainTasks.css";
+@import "sections/mainAdvantages.css";
+@import "sections/mainIntellectual.css";
+@import "sections/mainHowItWorks.css";
+@import "sections/news.css";
+@import "sections/newsItem.css";
+@import "sections/faq.css";
+@import "sections/cases.css";
+@import "sections/notFound.css";
+@import "sections/functional.css";
+@import "sections/geography.css";
+@import "sections/appEco.css";
+@import "sections/footer.css";
+@import "sections/preloader.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  line-height: 1.15;
+
+  --swiper-theme-color: var(--orange);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

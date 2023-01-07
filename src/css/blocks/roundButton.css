@@ -1,0 +1,130 @@
+.roundButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+  background-color: var(--orange);
+  padding: 0;
+
+  transition: width 200ms ease, height 200ms ease;
+}
+
+.roundButton__plusIcon {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+}
+
+.roundButton--scale:hover {
+  width: 65px;
+  height: 65px;
+}
+
+.roundButton--white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 0;
+
+  transition: background-color 200ms ease;
+}
+
+.roundButton__iconLine {
+  width: 14px;
+  height: 1px;
+  background-color: var(--orange);
+  position: relative;
+
+  transition: background-color 200ms ease;
+}
+
+.roundButton__iconLine::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 1px;
+  background-color: var(--orange);
+  transform: rotate(90deg);
+
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.roundButton--whiteActive,
+.roundButton--white:hover {
+  background-color: var(--orange);
+}
+
+.roundButton--whiteActive .roundButton__iconLine,
+.roundButton--white:hover .roundButton__iconLine {
+  background-color: #ffffff;
+}
+
+.roundButton--whiteActive .roundButton__iconLine::after,
+.roundButton--white:hover .roundButton__iconLine::after {
+  transform: rotate(0);
+  opacity: 0;
+}
+
+.roundButton__downloadIcon {
+  width: 16px;
+  height: 14px;
+}
+
+@media screen and (max-width: 1021px) {
+  .roundButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: var(--orange);
+    padding: 0;
+
+    transition: width 200ms ease, height 200ms ease;
+  }
+
+  .roundButton__plusIcon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .roundButton--white {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+  }
+
+  .roundButton__iconLine {
+    width: 7px;
+  }
+
+  .roundButton__iconLine::after {
+    width: 7px;
+  }
+
+  .roundButton--whiteActive,
+  .roundButton--white:hover {
+    background-color: var(--orange);
+  }
+
+  .roundButton--whiteActive .roundButton__iconLine,
+  .roundButton--white:hover .roundButton__iconLine {
+    background-color: #ffffff;
+  }
+
+  .roundButton__downloadIcon {
+    width: 11px;
+    height: 9px;
+  }
+}

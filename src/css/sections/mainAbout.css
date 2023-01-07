@@ -1,0 +1,413 @@
+.mainAbout {
+  width: 100%;
+}
+
+.mainAbout__description {
+  display: flex;
+  width: 100%;
+  margin-top: 190px;
+  margin-bottom: 80px;
+}
+
+.mainAbout__left {
+  flex-basis: 35%;
+}
+
+.mainAbout__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #8a8a8a;
+  margin: 0;
+  padding: 0;
+}
+
+.mainAbout__right {
+  flex-basis: 65%;
+}
+
+.mainAbout__heading {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+
+  padding: 0;
+  margin: 0 0 35px;
+}
+
+.mainAbout__headingAccent {
+  color: var(--blue) !important;
+}
+
+.mainAbout__subheading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--gray);
+  padding: 0;
+  margin: 0 0 60px;
+  max-width: 50%;
+}
+
+.mainAbout__cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 190px;
+}
+
+.mainAbout__card {
+  width: calc(33.33% - 27px);
+  height: 500px;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+}
+
+.mainAbout__card:not(:last-child) {
+  margin-right: 40px;
+}
+
+.mainAbout__cardInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+
+  transition: opacity 200ms ease, visibility 200ms ease;
+}
+
+.mainAbout__cardHidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  padding: 40px;
+  background-color: #ffffff;
+  visibility: hidden;
+
+  transition: opacity 600ms ease, visibility 600ms ease;
+}
+
+.mainAbout__cardHiddenText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--gray);
+
+  margin: 0;
+  padding: 0;
+}
+
+.mainAbout__cardTop {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.mainAbout__cardLogo {
+  flex-shrink: 0;
+  display: block;
+  width: 111px;
+  height: 40px;
+}
+
+.mainAbout__cardHeading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--gray);
+
+  margin-left: 20px;
+}
+
+.mainAbout__cardBottom {
+  margin-top: auto;
+  position: relative;
+  height: 40%;
+  display: flex;
+
+  pointer-events: none;
+}
+
+.mainAbout__cardImg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.mainAbout__cardOpen {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  pointer-events: all;
+}
+
+.mainAbout__cardBottom:hover + .mainAbout__cardHidden,
+.mainAbout__cardHidden:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1660px) {
+  .mainAbout__cardTop {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .mainAbout__card {
+    height: 400px;
+  }
+  .mainAbout__cardLogo {
+    width: 89px;
+    height: 32px;
+  }
+
+  .mainAbout__cardHeading {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .mainAbout__heading {
+    font-size: 42px;
+  }
+
+  .mainAbout__cardTop {
+  }
+
+  .mainAbout__cardHeading {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .mainAbout__description {
+    margin-bottom: 100px;
+  }
+
+  .mainAbout__heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .mainAbout__subheading {
+    margin-bottom: 50px;
+    max-width: 65%;
+  }
+
+  .mainAbout__cards {
+    margin-bottom: 180px;
+  }
+
+  .mainAbout__card {
+    width: calc(33.33% - 27px);
+    height: 386px;
+    padding: 15px;
+  }
+
+  .mainAbout__card:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .mainAbout__cardTop {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    padding-top: 50px;
+  }
+
+  .mainAbout__cardHeading {
+    font-size: 14px;
+    line-height: 1.35;
+    margin-left: 20px;
+  }
+
+  .mainAbout__cardBottom {
+    height: 35%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .mainAbout__card {
+    width: calc(33.33% - 20px);
+    height: 350px;
+    border: none;
+    padding: 0;
+  }
+
+  .mainAbout__card:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .mainAbout__cardTop {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    padding-top: 40px;
+  }
+
+  .mainAbout__cardHeading {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .mainAbout__cardHidden {
+    padding: 20px;
+  }
+
+  .mainAbout__cardHiddenText {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mainAbout__card {
+    height: 300px;
+  }
+
+  .mainAbout__subheading {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .mainAbout__description {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .mainAbout__left {
+    flex-basis: auto;
+    margin-bottom: 25px;
+  }
+
+  .mainAbout__title {
+    font-size: 12px;
+  }
+
+  .mainAbout__right {
+    flex-basis: auto;
+  }
+
+  .mainAbout__heading {
+    font-size: 25px;
+    margin: 0 0 20px;
+  }
+
+  .mainAbout__subheading {
+    font-size: 12px;
+    margin: 0 0 30px;
+    max-width: 50%;
+  }
+
+  .mainAbout__cards {
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .mainAbout__card {
+    width: calc(33.33% - 20px);
+    height: 196px;
+  }
+
+  .mainAbout__card:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .mainAbout__cardTop {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .mainAbout__cardLogo {
+    width: 50px;
+    height: 18px;
+  }
+
+  .mainAbout__cardHeading {
+    font-size: 10px;
+    line-height: 1.2;
+    margin-left: 0;
+  }
+
+  .mainAbout__cardBottom {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainAbout__description {
+    margin-top: 80px;
+    margin-bottom: 54px;
+  }
+
+  .mainAbout__left {
+    margin-bottom: 20px;
+  }
+
+  .mainAbout__heading {
+    font-size: 16px;
+  }
+
+  .mainAbout__subheading {
+    margin: 0 0 35px;
+    max-width: 90%;
+  }
+
+  .mainAbout__cards {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+  }
+
+  .mainAbout__card {
+    width: 70vw;
+    height: 250px;
+  }
+
+  .mainAbout__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .mainAbout__cardLogo {
+    width: 67px;
+    height: 24px;
+  }
+
+  .mainAbout__cardHeading {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .mainAbout__cardHeading br {
+    display: none;
+  }
+
+  .mainAbout__cardBottom {
+    height: 48%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainAbout__card {
+    width: 100%;
+  }
+}

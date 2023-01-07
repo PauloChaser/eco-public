@@ -1,0 +1,40 @@
+.cases {
+}
+
+.cases__wrapper {
+  width: 100%;
+  margin-bottom: 170px;
+}
+
+.cases__title {
+  color: var(--gray);
+  margin-bottom: 90px;
+}
+
+.cases__title br {
+  display: none;
+}
+
+@media screen and (max-width: 1021px) {
+  .cases__wrapper {
+    margin-bottom: 110px;
+  }
+
+  .cases__title {
+    margin-bottom: 50px;
+  }
+
+  .cases__title br {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cases__wrapper {
+    margin-bottom: 100px;
+  }
+
+  .cases__title {
+    margin-bottom: 40px;
+  }
+}

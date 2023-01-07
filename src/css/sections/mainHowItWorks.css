@@ -1,0 +1,140 @@
+.mainHowItWorks {
+  overflow: hidden;
+}
+
+.mainHowItWorks__wrapper {
+  width: 100%;
+  margin-top: 190px;
+  margin-bottom: 174px;
+}
+
+.mainHowItWorks__title {
+  margin-bottom: 100px;
+}
+
+.mainHowItWorks__imgWrapper {
+  width: 100%;
+}
+
+.mainHowItWorks__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.mainHowItWorks__imgCaption {
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--gray);
+  margin-left: 80px;
+}
+
+.mainHowItWorks__imgCaption span {
+  color: var(--orange);
+}
+
+@media screen and (max-width: 1440px) {
+  .mainHowItWorks__wrapper {
+    margin-top: 180px;
+    margin-bottom: 180px;
+  }
+
+  .mainHowItWorks__title {
+    margin-bottom: 50px;
+  }
+
+  .mainHowItWorks__imgWrapper {
+    width: 100%;
+  }
+
+  .mainHowItWorks__imgCaption {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .mainHowItWorks {
+  }
+
+  .mainHowItWorks__wrapper {
+    margin-top: 100px;
+    margin-bottom: 110px;
+  }
+
+  .mainHowItWorks__title {
+    margin-bottom: 20px;
+  }
+
+  .mainHowItWorks__imgWrapper {
+    margin-left: -50px;
+    margin-right: -50px;
+    width: calc(100% + 100px);
+  }
+
+  .mainHowItWorks__imgWrapper .simplebar-track.simplebar-horizontal {
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  .mainHowItWorks__imgWrapper
+    .simplebar-track.simplebar-horizontal
+    .simplebar-scrollbar {
+    height: 2px;
+    top: 0;
+    left: -2px;
+    min-height: 2px;
+  }
+
+  .mainHowItWorks__imgWrapper .simplebar-scrollbar:before {
+    background-color: var(--orange);
+    border-radius: 0;
+    opacity: 1;
+  }
+
+  .mainHowItWorks__imgWrapper .simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+  }
+
+  .mainHowItWorks__img {
+    margin-left: 0;
+    width: 1469px;
+    height: 664px;
+    flex: 1 1 0;
+    margin-bottom: 20px;
+  }
+
+  .mainHowItWorks__img img {
+    transform: translateX(0);
+
+    transition: transform 300ms ease;
+  }
+
+  .mainHowItWorks__img--scroll img {
+    transform: translateX(-50px);
+
+    transition: transform 1000ms ease;
+  }
+
+  .mainHowItWorks__img img {
+    width: 1379px;
+    height: 664px;
+    flex: 1 1 0;
+  }
+
+  .mainHowItWorks__imgCaption {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainHowItWorks__wrapper {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}

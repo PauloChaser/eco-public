@@ -1,0 +1,103 @@
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+  position: relative;
+
+  transition: background-color 200ms ease;
+}
+
+.arrows__item--disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.arrows__itemIcon {
+  margin-left: 0;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  transition: filter 200ms ease;
+  z-index: 1;
+}
+
+.arrows__itemIcon--right {
+  transform: scale(-1);
+}
+
+.arrows__item--white {
+  background-color: #ffffff;
+  border: none;
+}
+
+.arrows__item--white:hover {
+  background-color: var(--orange);
+}
+
+.arrows__item--white:active {
+  background-color: var(--dark-orange);
+}
+
+.arrows__item--white .arrows__itemIcon {
+  fill: var(--orange);
+  width: 21px;
+  height: 8px;
+
+  transition: fill 200ms ease;
+}
+
+.arrows__item--white:hover .arrows__itemIcon {
+  fill: #ffffff;
+}
+
+.arrows__item--orange {
+  background-color: var(--orange);
+  border: none;
+}
+
+.arrows__item--orange:active {
+  background-color: var(--dark-orange);
+}
+
+.arrows__item--orange .arrows__itemIcon {
+  fill: #ffffff;
+  width: 21px;
+  height: 8px;
+}
+
+@media screen and (max-width: 1021px) {
+  .arrows__item {
+    width: 36px;
+    height: 36px;
+  }
+
+  .arrows__itemIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .arrows__item--white .arrows__itemIcon,
+  .arrows__item--orange .arrows__itemIcon {
+    width: 11px;
+    height: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .arrows__item {
+    width: 35px;
+    height: 35px;
+  }
+}

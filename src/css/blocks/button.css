@@ -1,0 +1,112 @@
+.button {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  color: var(--blue);
+
+  padding: 16px 40px;
+  background-color: #ffffff;
+  width: 207px;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.button:active {
+  background-color: var(--dark-orange);
+}
+
+.button--bigOrange {
+  font-weight: 500;
+  background-color: var(--orange);
+  color: #ffffff;
+  width: 280px;
+  border-radius: 40px;
+  padding: 12px 36px;
+}
+
+.button--bigOrange:hover,
+.button--bigOrange:active {
+  background-color: var(--dark-orange);
+}
+
+.button--blue {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+.button__arrow {
+  display: flex;
+  margin-left: 12px;
+  padding: 8px;
+
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+
+  transition: border 200ms ease, background-color 200ms ease;
+}
+
+.button__arrowIcon {
+  width: 19px;
+  height: 19px;
+  fill: var(--orange);
+
+  transition: fill 200ms ease;
+}
+
+.button--bigOrange:hover .button__arrow {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--dark-orange);
+}
+
+.button--bigOrange:hover .button__arrowIcon {
+  fill: white;
+}
+
+.button__arrow--white {
+  background-color: transparent;
+  border-color: #ffffff80;
+}
+
+.button__arrow--white .button__arrowIcon {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 1021px) {
+  .button {
+    width: 139px;
+    padding: 11px 30px;
+    font-size: 10px;
+  }
+
+  .button--bigOrange {
+    background-color: var(--orange);
+    color: #ffffff;
+    width: 171px;
+    padding: 5px 20px;
+  }
+
+  .button__arrow {
+    margin-left: 10px;
+    padding: 5px;
+  }
+
+  .button__arrowIcon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+  }
+}
